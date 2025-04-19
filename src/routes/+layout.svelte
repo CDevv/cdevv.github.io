@@ -3,10 +3,17 @@
     import "../app.css";
     import MainCard from "../components/MainCard.svelte";
 </script>
+<style>
+    :global(body) {
+        /* this will apply to <body> */
+        font-family: "Nunito";
+    }
+</style>
 
 <title>nikodev page!</title>
-{@render children()}
 
 <div class="ml-72 mr-72 mt-32 text-white">
-    <MainCard />
+    <MainCard>
+        {@render children()}
+    </MainCard>
 </div>

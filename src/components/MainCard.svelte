@@ -1,13 +1,20 @@
 <script>
     import ProfilePic from "./ProfilePic.svelte";
+    import MainInfo from "./MainInfo.svelte";
+    import PageButton from "./PageButton.svelte";
+    let { children } = $props();
 </script>
 
-<div class="bg-gray-900 rounded-xl p-6">
-    <div class="flex">
+<div class="bg-gray-900 rounded-xl p-6 flex flex-col gap-5">
+    <div id="main-info" class="flex">
         <ProfilePic />
-        <div class="container">
-            <h1 class="text-3xl mt-8 text-center">Title</h1>
-            <p class="text-2xl text-center">Hai</p>
-        </div>
+        <MainInfo />
+    </div>
+    <div id="navbar" class="flex justify-stretch items-stretch gap-5">
+        <PageButton title="Home" href="/" />
+        <PageButton title="Projects" href="/projects" />
+    </div>
+    <div id="page-content">
+        {@render children()}
     </div>
 </div>

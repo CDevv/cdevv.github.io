@@ -2,7 +2,16 @@
     import ProfilePic from "./ProfilePic.svelte";
     import MainInfo from "./MainInfo.svelte";
     import PageButton from "./PageButton.svelte";
+    import { fade } from "svelte/transition";
     let { children } = $props();
+
+    let pageVisible = $state(true);
+    function enter() {
+        pageVisible = true;
+    }
+    function leave() {
+        pageVisible = false;
+    }
 </script>
 
 <div class="bg-gray-900 rounded-xl p-6 flex flex-col gap-5">
@@ -11,10 +20,12 @@
         <MainInfo />
     </div>
     <div id="navbar" class="flex justify-stretch items-stretch gap-5">
-        <PageButton title="Home" href="/" />
-        <PageButton title="Projects" href="/projects" />
+        <PageButton title="Home" href="/" onclick={leave}/>
+        <PageButton title="Projects" href="/projects" onclick={leave}/>
     </div>
-    <div id="page-content">
-        {@render children()}
-    </div>
+    {#if pageVisible}
+        <div id="page-content" in:fade out:fade onoutrostart={enter}>
+            {@render children()}
+        </div>
+    {/if}
 </div>

@@ -19,7 +19,7 @@
         <ProfilePic />
         <MainInfo />
     </div>
-    <div id="navbar" class="flex justify-stretch items-stretch gap-5">
+    <div id="navbar" class="grid auto-cols-auto grid-flow-col gap-5">
         <PageButton title="Home" href="/" onclick={leave}/>
         <PageButton title="Projects" href="/projects" onclick={leave}/>
     </div>

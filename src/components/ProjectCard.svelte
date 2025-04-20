@@ -1,5 +1,6 @@
 <script lang="ts">
     import { type Project } from "$lib/types";
+    import GitHubLink from "./GitHubLink.svelte";
     import TagLabel from "./TagLabel.svelte";
     let { project } = $props();
 </script>
@@ -9,7 +10,10 @@
 >
     <h1 class="text-xl font-bold">{project.name}</h1>
     <p>{project.description}</p>
-    <div class="mt-auto">
+    <div class="mt-auto flex flex-col gap-2">
+        <div>
+            <GitHubLink href={project.github}></GitHubLink>
+        </div>
         <div class="flex flex-row gap-0.5">
             {#each project.tags as tag}
                 <TagLabel {tag} />

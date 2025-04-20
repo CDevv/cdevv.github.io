@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
+@plugin "@iconify/tailwind4";
+
+@theme {
+    --color-gray-950: #0B2447;
+    --color-gray-900: #19376D;
+    --color-gray-800: #576CBC;
+    --color-nodejs: #f1e05a;
+    --color-markdown: #083fa1;
+    --color-godot: #355570;
+    --color-csharp: #178600;
+    --color-svelte: #ff3e00;
+    --color-typescript: #3178c6;
+    --color-game: #98c379;
+    --color-web: #56b6c2;
+    --color-desktop: #61afef;
+    --color-mobile: #e06c75;
+    --color-github: #2b3137;
+    --color-github-dark: #24292e;
+}
+
 @font-face {
     font-family: "Nunito";
     src: url("../nunito-v26-latin-regular.woff2") format("woff2");

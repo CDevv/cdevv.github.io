@@ -10,7 +10,8 @@ const projectConverter: FirestoreDataConverter<Project> = {
         return {
             name: data.name,
             description: data.desc,
-            tags: data.tags
+            tags: data.tags,
+            github: data.github
         }
     }
 }

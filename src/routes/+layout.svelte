@@ -12,7 +12,7 @@
 
 <title>nikodev page!</title>
 
-<div class="ml-72 mr-72 mt-32 text-white">
+<div class="ml-72 mr-72 mt-16 mb-16 text-white">
     <MainCard>
         {@render children()}
     </MainCard>

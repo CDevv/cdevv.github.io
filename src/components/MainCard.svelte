@@ -22,6 +22,7 @@
     <div id="navbar" class="grid auto-cols-auto grid-flow-col gap-5">
         <PageButton title="Home" href="/" onclick={leave}/>
         <PageButton title="Projects" href="/projects" onclick={leave}/>
+        <PageButton title="Links" href="/links" onclick={leave}/>
     </div>
     {#if pageVisible}
         <div id="page-content" in:fade out:fade onoutrostart={enter}>

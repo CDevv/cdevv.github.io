@@ -6,15 +6,15 @@
 </script>
 
 <div
-    class="rounded-xl bg-gray-950 p-4 flex flex-col transition duration-150 ease-in-out hover:scale-110"
+    class="rounded-xl bg-gray-950 p-4 min-h-[30vh] flex flex-col transition duration-150 ease-in-out hover:scale-110"
 >
     <h1 class="text-xl font-bold">{project.name}</h1>
     <p>{project.description}</p>
     <div class="mt-auto flex flex-col gap-2">
         <div>
-            <GitHubLink href={project.github}></GitHubLink>
+            <GitHubLink href={project.github} />
         </div>
-        <div class="flex flex-row gap-0.5">
+        <div class="flex flex-wrap gap-0.5">
             {#each project.tags as tag}
                 <TagLabel {tag} />
             {/each}

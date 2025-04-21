@@ -9,7 +9,7 @@
     let loading = $state(true);
 
     async function fetchProjects() {
-        const response = await fetch("/projects");
+        const response = await fetch("/api/projects");
         projects = await response.json();
         loading = false;
     }

@@ -11,7 +11,8 @@ const projectConverter: FirestoreDataConverter<Project> = {
             name: data.name,
             description: data.desc,
             tags: data.tags,
-            github: data.github
+            github: data.github,
+            itchio: data.itchio
         }
     }
 }

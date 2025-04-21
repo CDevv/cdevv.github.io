@@ -22,7 +22,7 @@
 {#if loading}
     <h1>Loading..</h1>
 {:else}
-    <div class="grid grid-cols-2 gap-2.5">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2.5">
         {#each projects as project}
             <ProjectCard {project} />
         {/each}

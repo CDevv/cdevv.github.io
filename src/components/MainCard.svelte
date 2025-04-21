@@ -15,11 +15,11 @@
 </script>
 
 <div class="bg-gray-900 rounded-xl p-6 flex flex-col gap-5">
-    <div id="main-info" class="flex">
+    <div id="main-info" class="flex flex-col lg:flex-row items-center">
         <ProfilePic />
         <MainInfo />
     </div>
-    <div id="navbar" class="grid auto-cols-auto grid-flow-col gap-5">
+    <div id="navbar" class="grid auto-cols-auto grid-flow-row lg:grid-flow-col gap-5">
         <PageButton title="Home" href="/" onclick={leave}/>
         <PageButton title="Projects" href="/projects" onclick={leave}/>
         <PageButton title="Links" href="/links" onclick={leave}/>

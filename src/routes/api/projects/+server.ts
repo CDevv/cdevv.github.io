@@ -6,5 +6,3 @@ export async function GET() {
 
     return json(list);
 }
-
-export const prerender = true;

@@ -23,6 +23,7 @@
     <div id="navbar" class="grid auto-cols-auto grid-flow-row lg:grid-flow-col gap-5">
         <PageButton title="Home" href="/" onclick={leave}/>
         <PageButton title="Projects" href="/projects" onclick={leave}/>
+        <PageButton title="Blogs" href="/blogs" onclick={leave}/>
         <PageButton title="Links" href="/links" onclick={leave}/>
         <PageButton title="Contact" href="/contact" onclick={leave}/>
     </div>

@@ -1,4 +1,4 @@
-import type { Project } from "./types";
+import type { Project, Blog } from "./types";
 import type { DocumentData, FirestoreDataConverter, QueryDocumentSnapshot, SnapshotOptions, WithFieldValue } from "firebase/firestore";
 
 const projectConverter: FirestoreDataConverter<Project> = {
@@ -17,4 +17,20 @@ const projectConverter: FirestoreDataConverter<Project> = {
     }
 }
 
-export { projectConverter }
+const blogConverter: FirestoreDataConverter<Blog> = {
+    toFirestore: function (modelObject: WithFieldValue<Blog>): WithFieldValue<DocumentData> {
+        throw new Error("Function not implemented.");
+    },
+    fromFirestore: function (snapshot: QueryDocumentSnapshot<DocumentData, DocumentData>, options?: SnapshotOptions): Blog {
+        let data = snapshot.data(options);
+        return {
+            id: data.id,
+            title: data.title,
+            content: data.content,
+            datetime: new Date(data.datetime).toDateString(),
+            tags: data.tags
+        }
+    }
+}
+
+export { projectConverter, blogConverter }

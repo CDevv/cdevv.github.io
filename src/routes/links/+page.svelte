@@ -8,4 +8,5 @@
     <SocialLink href="https://bsky.app/profile/cdevv.bsky.social" icon="bluesky" title="Bluesky"/>
     <SocialLink href="https://github.com/CDevv/" icon="github" title="GitHub"/>
     <SocialLink href="https://nikodevv.itch.io/" icon="itchdotio" title="itch.io"/>
+    <SocialLink href="https://ko-fi.com/nikodevv" icon="kofi" title="Ko-fi"/>
 </div>

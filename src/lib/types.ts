@@ -5,3 +5,11 @@ export type Project = {
     github: string,
     itchio: string | undefined
 }
+
+export type Blog = {
+    id: string,
+    title: string,
+    content: string,
+    datetime: string,
+    tags: string[]
+}

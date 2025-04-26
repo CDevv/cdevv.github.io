@@ -27,32 +27,33 @@
     };
 </script>
 
-<h1 class="text-3xl font-bold">Contact me!</h1>
+<h1 class="text-3xl font-bold text-center">Contact me!</h1>
+<br>
 <form on:submit|preventDefault={handleSubmit} class="flex flex-col gap-2">
     <input type="hidden" name="access_key" value={publicKey} />
     <input
-        class="bg-gray-800 rounded p-2 focus:border-gray-950"
+        class="bg-gray-800 rounded p-2 outline-none focus:outline-solid outline-2 focus:outline-gray-950"
         placeholder="Name.."
         type="text"
         name="name"
         required
     />
     <input
-        class="bg-gray-800 rounded p-2"
+        class="bg-gray-800 rounded p-2 outline-none focus:outline-solid outline-2 focus:outline-gray-950"
         placeholder="Email.."
         type="email"
         name="email"
         required
     />
     <textarea
-        class="bg-gray-800 rounded p-2"
+        class="bg-gray-800 rounded p-2 outline-none focus:outline-solid outline-2 focus:outline-gray-950"
         name="message"
         placeholder="Message.."
         required
         rows="3"
     ></textarea>
     <input
-        class="bg-gray-950 rounded p-2 duration-150 hover:-translate-y-2 cursor-pointer"
+        class="bg-gray-950 rounded p-2 duration-150 hover:-translate-y-2 hover:bg-gray-900 cursor-pointer"
         type="submit"
         value="Submit"
     />

@@ -11,6 +11,7 @@
     }
     function leave() {
         pageVisible = false;
+        return false;
     }
 </script>
 

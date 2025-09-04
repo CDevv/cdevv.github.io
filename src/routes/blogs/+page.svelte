@@ -12,7 +12,7 @@
         loading = false;
     }
 
-    onMount(() => fetchData());
+    onMount(async () => await fetchData());
 </script>
 
 <h1 class="text-3xl font-bold text-center">Blogs</h1>

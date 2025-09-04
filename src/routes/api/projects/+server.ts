@@ -1,8 +1,14 @@
-import { getProjects } from "$lib/server/projects";
 import { json } from "@sveltejs/kit"
+import { BACKEND_URI } from "$env/static/private"
 
 export async function GET() {
-    const list = await getProjects();
+    try {
+        const res = await fetch(`${BACKEND_URI}/projects`)
+        const resJson = await res.json()
 
-    return json(list);
+        return json(resJson)
+    } catch (error) {
+        console.log(error)
+        return json({ msg: "Error!" }, { status: 500 })
+    }
 }

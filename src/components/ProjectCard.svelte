@@ -14,8 +14,8 @@
     <div class="mt-auto flex flex-col gap-1">
         <div class="flex flex-row gap-1">
             <GitHubLink href={project.github} />
-            {#if project.itchio}
-                <ItchIoLink href={project.itchio} />
+            {#if project.itch}
+                <ItchIoLink href={project.itch} />
             {/if}
         </div>
         <div class="flex flex-wrap gap-0.5">

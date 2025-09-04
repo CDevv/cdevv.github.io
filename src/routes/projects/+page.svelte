@@ -14,7 +14,7 @@
         loading = false;
     }
 
-    onMount(() => fetchProjects());
+    onMount(async () => await fetchProjects());
 </script>
 
 <h1 class="text-3xl font-bold text-center">My Projects</h1>

@@ -15,7 +15,7 @@
     }
 </script>
 
-<div class="bg-gray-900 rounded-xl p-6 flex flex-col gap-5">
+<div class="main-window rounded-b-lg! flex flex-col gap-5">
     <div id="main-info" class="flex flex-col lg:flex-row items-center">
         <ProfilePic />
         <MainInfo />

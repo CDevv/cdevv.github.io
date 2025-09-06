@@ -22,6 +22,38 @@
     --color-itchio-dark: #e04f4f;
 }
 
+.main-layout {
+    background-image: url('bg.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.window-bar {
+    @apply bg-sky-950/90 border-sky-950;
+}
+
+.bar-button {
+    @apply bg-sky-800/90 rounded hover:bg-sky-500 cursor-pointer;
+}
+
+.main-window {
+    @apply bg-sky-900/90 backdrop-blur-[5px] rounded-b-lg p-6 border-2 border-sky-900;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-theme {
+    @apply bg-sky-800/90 rounded-xl hover:bg-sky-500 border-2 border-sky-800 shadow-xl
+}
+
+.secondary-theme-no-hover {
+    @apply bg-sky-800/90 rounded-xl border-2 border-sky-800 shadow-xl
+}
+
+.item-tag {
+    @apply bg-transparent border-sky-900;
+}
+
 @font-face {
     font-family: "Nunito";
     src: url("fonts/nunito-v26-latin-regular.woff2") format("woff2");

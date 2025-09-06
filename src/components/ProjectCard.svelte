@@ -7,7 +7,7 @@
 </script>
 
 <div
-    class="rounded-xl bg-gray-950 p-4 min-h-[30vh] flex flex-col transition duration-150 ease-in-out hover:scale-110"
+    class="secondary-theme p-4 min-h-[30vh] flex flex-col transition duration-150 ease-in-out hover:-translate-y-2"
 >
     <h1 class="text-xl font-bold">{project.name}</h1>
     <p>{project.description}</p>

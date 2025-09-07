@@ -20,7 +20,9 @@
 {#if loading}
     <p>Loading..</p>
 {:else}
-    {#each blogs as blog}
-        <BlogCard {blog}></BlogCard>
-    {/each}
+    <div class="flex flex-col gap-2">
+        {#each blogs as blog}
+            <BlogCard {blog}></BlogCard>
+        {/each}
+    </div>
 {/if}

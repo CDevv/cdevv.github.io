@@ -23,7 +23,7 @@
 }
 
 .main-layout {
-    background-image: url('bg.png');
+    background-image: url('/bg.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;

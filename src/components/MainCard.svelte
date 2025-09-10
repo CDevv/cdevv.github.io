@@ -20,7 +20,7 @@
         <ProfilePic />
         <MainInfo />
     </div>
-    <div id="navbar" class="grid auto-cols-auto grid-flow-row lg:grid-flow-col gap-5">
+    <div id="navbar" class="flex flex-col lg:flex-row gap-5 min-w-full">
         <PageButton title="Home" href="/" onclick={leave}/>
         <PageButton title="Projects" href="/projects" onclick={leave}/>
         <PageButton title="Blogs" href="/blogs" onclick={leave}/>

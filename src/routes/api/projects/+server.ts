@@ -12,3 +12,5 @@ export async function GET() {
         return json({ msg: "Error!" }, { status: 500 })
     }
 }
+
+export const prerender = true

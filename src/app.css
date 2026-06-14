@@ -43,7 +43,7 @@
 }
 
 .secondary-theme {
-    @apply bg-sky-800/90 rounded-xl hover:bg-sky-500 border-2 border-sky-800 shadow-xl
+    @apply bg-sky-800/90 rounded-xl hover:bg-sky-500 border-2 border-sky-800 hover:border-sky-600 shadow-xl
 }
 
 .secondary-theme-no-hover {

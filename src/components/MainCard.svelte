@@ -1,5 +1,5 @@
 <script>
-    import ProfilePic from "./ProfilePic.svelte";
+    import XenithImage from "./XenithImage.svelte";
     import MainInfo from "./MainInfo.svelte";
     import PageButton from "./PageButton.svelte";
     import { fade } from "svelte/transition";
@@ -17,7 +17,6 @@
 
 <div class="main-window rounded-b-lg! flex flex-col gap-5">
     <div id="main-info" class="flex flex-col lg:flex-row items-center">
-        <ProfilePic />
         <MainInfo />
     </div>
     <div
@@ -26,6 +25,7 @@
     >
         <PageButton title="Home" href="/" onclick={leave} />
         <PageButton title="Projects" href="/projects" onclick={leave} />
+        <PageButton title="Fanarts" href="/fanarts" onclick={leave} />
         <PageButton title="Links" href="/links" onclick={leave} />
         <PageButton title="Contact" href="/contact" onclick={leave} />
     </div>

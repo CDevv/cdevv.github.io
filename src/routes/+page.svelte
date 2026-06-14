@@ -25,7 +25,26 @@
     <Skill icon="python" title="Python" />
 </div>
 <br />
+<hr />
+<div>
+    <br />
+    <h1 class="text-2xl font-bold">
+        I'm currently working on a 2D RPG game engine! It's still in progress,
+        but you can find some info about it on here: <a
+            class="text-desktop hover:underline"
+            href="https://rpgpp.dev/">RPG++ Website</a
+        >
+        <br />
+        <a
+            class="text-desktop hover:underline"
+            href="https://github.com/rpgppengine">RPG++ GitHub</a
+        >
+    </h1>
+    <br />
+</div>
+<hr />
 <div class="hidden lg:block">
+    <br />
     <h1 class="text-2xl font-bold">You can get a demo of my game here!</h1>
     <iframe
         class=""
@@ -38,4 +57,5 @@
             >TheWizardCoder by nikodevv</a
         ></iframe
     >
+    <br />
 </div>

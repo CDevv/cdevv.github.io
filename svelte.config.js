@@ -14,6 +14,11 @@ const config = {
 		adapter: adapter({
 			envConfig: 'MY_'
 		})
+	},
+	compilerOptions: {
+		compatibility: {
+			componentApi: 4
+		}
 	}
 };
 

@@ -65,6 +65,24 @@ export function load() {
                 width: '512',
                 alt: 'Xenith cutie by Amy',
                 caption: 'Xenith cutie by Amy'
+            },
+            {
+                img: 'fanarts/xenith-sword-joseph.png',
+                thumb:
+                'fanarts/xenith-sword-joseph.png',
+                height: '1600',
+                width: '1536',
+                alt: 'Xenith with sword by joseph',
+                caption: 'Xenith with sword by joseph'
+            },
+            {
+                img: 'fanarts/artfight.png',
+                thumb:
+                'fanarts/artfight.png',
+                height: '1057',
+                width: '1280',
+                alt: 'Xenith as bag charm from Artfight',
+                caption: 'Xenith as bag charm from Artfight'
             }
         ],
     };

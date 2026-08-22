@@ -1,7 +1,8 @@
 import { json } from '@sveltejs/kit';
 import { BACKEND_URI } from "$env/static/private"
+import type { RequestHandler } from './$types';
 
-export async function GET() {
+export const GET: RequestHandler = async (event) => {
     try {
         const res = await fetch(`${BACKEND_URI}/blogs`)
         const resJson = await res.json()
